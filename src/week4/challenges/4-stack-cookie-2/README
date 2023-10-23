@@ -1,0 +1,4 @@
+Can you guess my random and then break this stack cookie?
+
+srand(time(0)) & rand() is not secure at all never use this combo
+for your secret homework...

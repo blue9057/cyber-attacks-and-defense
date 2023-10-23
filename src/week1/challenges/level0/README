@@ -1,0 +1,6 @@
+The program asks you a password, and it uses strcmp() to compare
+your input and the password.
+
+Can you discover the password to get a privileged shell from the challenge?
+
+Hint: use ltrace

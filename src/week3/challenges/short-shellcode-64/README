@@ -1,0 +1,2 @@
+Can you write a non-zero shellcode without using more than 12 bytes, in amd64?
+The program runs setregid(getegid(), getegid()) for you.

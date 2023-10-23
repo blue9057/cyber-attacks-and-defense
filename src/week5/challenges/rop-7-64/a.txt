@@ -1,0 +1,71 @@
+Gadgets information
+============================================================
+0x0000000000400482 : adc byte ptr [rax], ah ; jmp rax
+0x00000000004005cf : add bl, dh ; ret
+0x00000000004005cd : add byte ptr [rax], al ; add bl, dh ; ret
+0x00000000004005cb : add byte ptr [rax], al ; add byte ptr [rax], al ; add bl, dh ; ret
+0x0000000000400556 : add byte ptr [rax], al ; add byte ptr [rax], al ; leave ; ret
+0x000000000040048c : add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x00000000004005cc : add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x0000000000400557 : add byte ptr [rax], al ; add cl, cl ; ret
+0x00000000004003db : add byte ptr [rax], al ; add rsp, 8 ; ret
+0x0000000000400558 : add byte ptr [rax], al ; leave ; ret
+0x000000000040048e : add byte ptr [rax], al ; pop rbp ; ret
+0x00000000004005ce : add byte ptr [rax], al ; ret
+0x00000000004004f8 : add byte ptr [rcx], al ; ret
+0x0000000000400559 : add cl, cl ; ret
+0x00000000004004f4 : add eax, 0x200b3e ; add ebx, esi ; ret
+0x00000000004004f9 : add ebx, esi ; ret
+0x00000000004003de : add esp, 8 ; ret
+0x00000000004003dd : add rsp, 8 ; ret
+0x00000000004004f7 : and byte ptr [rax], al ; add ebx, esi ; ret
+0x00000000004005a9 : call qword ptr [r12 + rbx*8]
+0x00000000004005aa : call qword ptr [rsp + rbx*8]
+0x000000000040051e : call rax
+0x0000000000400552 : clc ; call rax
+0x000000000040054e : dec dword ptr [rax - 0x75] ; clc ; call rax
+0x00000000004005ac : fmul qword ptr [rax - 0x7d] ; ret
+0x0000000000400519 : int1 ; push rbp ; mov rbp, rsp ; call rax
+0x000000000040047d : je 0x400498 ; pop rbp ; mov edi, 0x601038 ; jmp rax
+0x00000000004004cb : je 0x4004e0 ; pop rbp ; mov edi, 0x601038 ; jmp rax
+0x0000000000400518 : je 0x400511 ; push rbp ; mov rbp, rsp ; call rax
+0x0000000000400485 : jmp rax
+0x000000000040055a : leave ; ret
+0x00000000004004f3 : mov byte ptr [rip + 0x200b3e], 1 ; ret
+0x0000000000400555 : mov eax, 0 ; leave ; ret
+0x0000000000400550 : mov eax, dword ptr [rbp - 8] ; call rax
+0x000000000040051c : mov ebp, esp ; call rax
+0x0000000000400480 : mov edi, 0x601038 ; jmp rax
+0x00000000004005a7 : mov edi, edi ; call qword ptr [r12 + rbx*8]
+0x00000000004005a6 : mov edi, r15d ; call qword ptr [r12 + rbx*8]
+0x000000000040054f : mov rax, qword ptr [rbp - 8] ; call rax
+0x000000000040051b : mov rbp, rsp ; call rax
+0x0000000000400488 : nop dword ptr [rax + rax] ; pop rbp ; ret
+0x00000000004005c8 : nop dword ptr [rax + rax] ; ret
+0x00000000004004d5 : nop dword ptr [rax] ; pop rbp ; ret
+0x00000000004004f6 : or esp, dword ptr [rax] ; add byte ptr [rcx], al ; ret
+0x00000000004004f5 : or esp, dword ptr ds:[rax] ; add byte ptr [rcx], al ; ret
+0x00000000004005bc : pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x00000000004005be : pop r13 ; pop r14 ; pop r15 ; ret
+0x00000000004005c0 : pop r14 ; pop r15 ; ret
+0x00000000004005c2 : pop r15 ; ret
+0x00000000004004f2 : pop rbp ; mov byte ptr [rip + 0x200b3e], 1 ; ret
+0x000000000040047f : pop rbp ; mov edi, 0x601038 ; jmp rax
+0x00000000004005bb : pop rbp ; pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x00000000004005bf : pop rbp ; pop r14 ; pop r15 ; ret
+0x0000000000400490 : pop rbp ; ret
+0x00000000004005c3 : pop rdi ; ret
+0x00000000004005c1 : pop rsi ; pop r15 ; ret
+0x00000000004005bd : pop rsp ; pop r13 ; pop r14 ; pop r15 ; ret
+0x000000000040051a : push rbp ; mov rbp, rsp ; call rax
+0x00000000004003e1 : ret
+0x0000000000400517 : sal byte ptr [rcx + rsi*8 + 0x55], 0x48 ; mov ebp, esp ; call rax
+0x0000000000400554 : sar byte ptr [rax], 1 ; leave ; ret
+0x00000000004005d5 : sub esp, 8 ; add rsp, 8 ; ret
+0x00000000004005d4 : sub rsp, 8 ; add rsp, 8 ; ret
+0x000000000040048a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x00000000004005ca : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x0000000000400516 : test eax, eax ; je 0x400513 ; push rbp ; mov rbp, rsp ; call rax
+0x0000000000400515 : test rax, rax ; je 0x400514 ; push rbp ; mov rbp, rsp ; call rax
+
+Unique gadgets found: 67

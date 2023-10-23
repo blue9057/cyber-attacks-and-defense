@@ -1,0 +1,2 @@
+Use only alphanumeric characters to write your x86 shellcode:
+the charset is 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz

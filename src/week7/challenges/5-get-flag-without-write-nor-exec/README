@@ -1,0 +1,47 @@
+Using seccomp, we can set a policy on certain system calls.
+In this binary program, you can only invoke:
+open()
+read()
+lseek() -- internally required by read from stdin
+exit_group() -- required by the program in default
+exit()  -- required by the program in default
+
+Can you get the flag by exploiting the buffer overflow vulnerability
+in the program?
+
+
+NOTE:
+    Core file will never be generated for this challenge.
+    Why? If you open the flag, read the flag in somewhere in the program's
+    memory, and then generate a crash, you can get the flag easily from
+    the core file. So I excluded this program from generating the core file.
+
+
+Then, how to read the flag?:
+
+    First, you can build a rop chain to do following things:
+        fd = open("flag", 0);
+        read(fd, 0x602800, 0x200);
+
+    Then, 0x602800, a part of the global variable area, will store
+    the content of the flag.
+
+    After that, you may use some other gadgets, e.g.,
+
+        0x0000000000400b18 <+24>:    mov    -0x14(%rbp),%edi
+
+    to move data from a memory location (by setting rbp to address + 0x14)
+    to the edi (which is part of rdi) register.
+
+    And then, you may call exit(rdi), and the exit code will store
+    1 byte of data of the memory.
+
+
+    The following two commands will be helpful:
+        # wait until program crashes/finishes,
+        # after you send your exploit to the program
+        p.wait()
+
+        # after program crashes/finishes,
+        # this command will let you retrieve the exit code of the program
+        exit_code = p.poll()

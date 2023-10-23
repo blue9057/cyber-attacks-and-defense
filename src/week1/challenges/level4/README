@@ -1,0 +1,6 @@
+This challenge is a mixture of level0, level1, level2, and level3.
+
+Can you pass two checks, password() and calculate() to get a
+privileged shell from the challenge?
+
+Hint: Please understand the usage of scanf(), strtoul(), snprintf(), etc..

@@ -1,0 +1,6 @@
+The program asks you a password, but now it transforms your input to
+an integer value via scanf() and then applies integer comparison.
+
+Can you discover the password and get the privileged shell from the challenge?
+
+Hint: use gdb to check the comparison instruction (e.g., cmpl, test, etc.).

@@ -1,0 +1,2 @@
+The program wipes out both envp and argv. Can you put your shellcode on the
+stack and run it?

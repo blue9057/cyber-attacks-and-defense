@@ -1,0 +1,4 @@
+Call:
+    mprotect(global_variable_area, 0x1000, 7)
+    read(1, global_variable_area+something, 0x100)
+    // put your shellcode at there and return to the address!

@@ -1,0 +1,19 @@
+Stack is configured as follows:
+
+[ebp+0x4]           return address
+[ebp]               saved ebp
+[ebp-0x4]
+[ebp-0x8]           a = 0x41414141
+[ebp-0xc]           b = 0x42424242
+[ebp-0x10]
+[ebp-0x14]
+[ebp-0x18]
+[ebp-0x1c]
+[ebp-0x20]          buffer
+
+Can you overwrite both a and b to make:
+
+a = 0x48474645 and b = 0x44434241
+
+and also overwrite the return address to execute get_a_shell()?
+

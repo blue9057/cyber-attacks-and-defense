@@ -1,0 +1,5 @@
+The program asks you seven integers as the key to the privileged shell.
+Can you guess what are they and pwn the challenge?
+
+Hint: You may reverse engineer the algorithm, but if you are lazy enough,
+      you may pass the algorithm to see only the result of the algorithm...

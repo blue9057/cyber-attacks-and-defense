@@ -1,0 +1,9 @@
+CC=clang
+
+all: bof-level0
+
+bof-level0: bof-level0.c
+	$(CC) -o $@ $< -m32 -fno-stack-protector -U_FORTIFY_SOURCE -O0
+
+clean:
+	rm -rf bof-level0

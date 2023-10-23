@@ -1,0 +1,13 @@
+In receive_input(),
+the program first store the return address to
+a global varlable 'my_return_address'.
+Later, when the function returns,
+the program gets the current return address (stores to new_return_address)
+and compares values in my_return_address to new_return_address.
+In case if the values in two variables are different,
+the program regard it as a case of attack
+(because the return address has been changed!)
+and run exit(-1).
+
+Under this condition,
+can you exploit the program and run get_a_shell()?

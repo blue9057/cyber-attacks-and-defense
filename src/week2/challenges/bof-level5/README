@@ -1,0 +1,17 @@
+The stack is configured as follows (in receive_input()):
+
+[ebp+0x4]       return address              Can't overwrite
+[ebp]           saved ebp
+[ebp-0x4]
+[ebp-0x8]
+...
+...
+...
+[ebp-0x80]      buffer
+
+
+You can overwrite the 'saved ebp' but you can't overwrite the return address
+because the buffer size is 128 byte, and your input is allowed upto 132 bytes
+(to fully overwrite the return address, you need 136 bytes of your input).
+
+Can you exploit this program to run get_a_shell()?

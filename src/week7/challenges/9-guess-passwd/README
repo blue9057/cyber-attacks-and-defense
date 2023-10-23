@@ -1,0 +1,13 @@
+Can you guess my root password?
+The PASSWD string in the source code is scrambled, but the length of
+my password is the same as the length of the string PASSWD.
+
+Password charset: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+
+Hint: measure the time
+    import time
+
+    t1 = time.time()
+    data = p.recv()
+    t2 = time.time()
+    time_diff = t2 - t1

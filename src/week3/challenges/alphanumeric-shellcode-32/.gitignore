@@ -1,0 +1,4 @@
+shellcode-32
+x86-shellcode
+*.bin
+*.o

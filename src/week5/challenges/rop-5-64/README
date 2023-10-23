@@ -1,0 +1,7 @@
+Steps:
+
+1. Leak GOT of any libc function -> get the function address in libc
+2. Calculate the address of execve
+3. execve("A", 0, 0);
+The program A must inherit the privilege
+(e.g., call setreuid(geteuid(), geteuid()); system("sh")).

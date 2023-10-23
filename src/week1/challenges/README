@@ -1,0 +1,10 @@
+level0: use strcmp (tut)
+level1: use integer on the stack (tut)
+level2: use integer at the globals (tut)
+level3: use a loop (tut)
+level4: use strcmp, atoi, variables on the stack and globals
+level5: use loop, atoi, sum, sprintf, string compare, value compare
+level6: a bubble sort algorithm
+level7: use memfrob, atoi, calculate, etc.
+level8: fibonacci with a tweak
+level9: prime number

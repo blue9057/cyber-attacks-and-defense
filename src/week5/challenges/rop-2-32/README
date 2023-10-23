@@ -1,0 +1,4 @@
+Call:
+    open("flag", 0, 0);
+    read(3, global_variable_addr, size);
+    write(1, global_variable_addr, size);

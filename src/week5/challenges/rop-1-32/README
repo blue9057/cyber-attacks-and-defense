@@ -1,0 +1,4 @@
+Practice return-oriented Programming!
+Call:
+    setregid(50000,50000);
+    execve("/bin/sh", 0, 0);

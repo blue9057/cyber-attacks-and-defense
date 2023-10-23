@@ -1,0 +1,5 @@
+The program wipes out all the stack content located in the upper location
+than the arguments of the main() function
+(e.g., wipes out from the address of argc to the top).
+
+Can you place your shellcode on the stack and run your shellcode?

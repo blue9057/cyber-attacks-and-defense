@@ -1,0 +1,29 @@
+ltrace - what is library call? - examples: strcmp?! atoi?!
+man page - function name!
+strace - what is system call? - examples: open, read, write, setreuid, etc.
+
+I/O
+    printf
+    scanf
+        %d
+        %u
+        %x
+        %ld
+        %lu
+        %lx
+        %llx
+        %llu
+        %lld
+        %s
+        %f
+        %g
+
+local variables - stack.
+global variables - from the program - rodata, data, bss, etc.
+
+Data types
+    integer: hexadecimal numbers, negative numbers, and endianess.
+    string: null-terminator
+    string-related functions
+        strcmp
+        strcpy

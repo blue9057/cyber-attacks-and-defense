@@ -1,0 +1,17 @@
+Scored -
+
+SHELLCODE - 32bit getegid(); setreguid(); execve() shell
+SHELLCODE - 64bit getegid(); setreguid(); execve() shell
+SHELLCODE - ASCII 32
+SHELLCODE - ASCII 64
+
+BOF       - simple - using ENVP
+BOF       - ARGV - delete ENVP
+BOF       - delete ARGV ENVP
+BOF       - ret-check (no return to stack check)
+
+
+Not-scored
+
+SHELLCODE - alphanumeric 32
+SHELLCODE - alphanumeric 64

@@ -1,0 +1,13 @@
+shellcode-32                - 10 pts
+shellcode-64                - 10 pts
+shellcode-nonzero-32        - 10 pts
+shellcode-nonzero-64        - 10 pts
+shellcode-short-32          - 10 pts        + 20 extra pts for the shortest shellcode
+shellcode-short-64          - 10 pts        + 20 extra pts for the shortest shellcode
+shellcode-ascii-32          - 20 pts
+shellcode-ascii-64          - 20 pts
+shellcode-envp-32           - 10 pts
+shellcode-argv-64           - 10 pts
+shellcode-where             - extra-credit 10 pts
+shellcode-alphanumeric-32   - extra-credit 50 pts
+shellcode-alphanumeric-64   - extra-credit 50 pts

@@ -1,0 +1,9 @@
+Write a 32-bit shellcode that runs:
+    setregid(getegid(), getegid())
+    execve("/bin/sh", 0, 0);
+and put the shellcode binary (shellcode.bin) into this directory.
+
+Your shellcode must not have zero byte.
+Check that with make objdump and make print. No 00 or \x00!
+
+

@@ -1,0 +1,13 @@
+The program will read one integer value, and you need to match
+constraints set by the program (length and value).
+
+Pseudocode of the program
+    1. read a string from the user;
+    2. get the length of the string;
+        exit if input length is not matched with a predefined value.
+    3. convert the input to an integer and then to a string;
+    4. apply xor to the string and compare each byte to the password
+        exit if any byte of your input is not matched with the password
+
+
+Hint: two's complement https://en.wikipedia.org/wiki/Two%27s_complement

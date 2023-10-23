@@ -1,0 +1,18 @@
+The stack is configured as follows (in receive_input()):
+
+[ebp+0x4]       return address              Can't overwrite
+[ebp]           saved ebp                   Can overwrite the last 1 byte...
+[ebp-0x4]
+[ebp-0x8]
+...
+...
+...
+[ebp-0x88]      buffer
+
+
+The program gets your input upto 137 bytes because the developer made a mistake,
+putting '=' in the for loop. Because of this, you can overwrite
+the last 1 byte of 'saved ebp' but you can't overwrite other bytes nor
+the return address.
+
+Can you exploit this program to run get_a_shell()?

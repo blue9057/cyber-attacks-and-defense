@@ -1,0 +1,17 @@
+
+[rbp+0x8]       return address              Can't overwrite
+[rbp]           saved rbp                   Can overwrite the last 1 byte...
+[rbp-0x8]
+[rbp-0x10]
+...
+...
+...
+[rbp-0x80]      buffer
+
+
+The program gets your input upto 129 bytes because the developer made a mistake,
+putting '=' in the for loop. Because of this, you can overwrite
+the last 1 byte of 'saved ebp' but you can't overwrite other bytes nor
+the return address.
+
+Can you exploit this program to run get_a_shell()?

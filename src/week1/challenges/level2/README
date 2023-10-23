@@ -1,0 +1,6 @@
+The program reads three integers from your input and does some calculations.
+
+Can you discover at which condition the program grants you a privileged shell?
+
+Hint: use gdb to figure out the calculation and the value that is compared to
+the calculation result.

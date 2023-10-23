@@ -1,0 +1,8 @@
+Can you run the following functions by exploiting
+a buffer overflow vulnerability?
+
+1. fd = open("flag", O_RDONLY);
+2. read(fd, buf, 0x100);
+3. write(1, buf, 0x100);
+
+Then, the flag is yours!
