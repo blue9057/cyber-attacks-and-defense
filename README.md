@@ -19,6 +19,15 @@ This approach aims to empower novice hackers with the acumen and
 proficiency required to navigate, understand, and innovate in
 the ever-evolving landscape of cybersecurity threats and defenses.
 
+# Running binary files
+
+The binary files here are tested running on the following Linux distributions:
+
+1. Ubuntu 16.04 LTS
+2. Ubuntu 18.04 LTS (Bionic Beaver; go BEAVS, go OSUSEC!)
+3. Ubuntu 20.04 LTS
+4. Ubuntu 22.04 LTS
+
 # License
 This repository operates under dual licensing terms, delineated as follows:
 
@@ -62,3 +71,19 @@ available in the LICENSE.md file accompanying this repository.
 Parties are advised to review these terms thoroughly
 to ascertain compliance with all stipulated conditions and restrictions,
 thereby preempting any inadvertent contravention of the licensing agreement.
+
+
+## Exception to the Mandatory Donation Clause
+
+An exemption to the stipulated mandatory donation requirement
+may be granted under the specific authorization of the repository's
+principal contributor, Dr. Yeongjin Jang. Parties interested in seeking
+concessions concerning this clause, such as a reduction in the prescribed
+donation amount, are advised to initiate a formal request by reaching out to
+Dr. Jang directly through electronic correspondence at
+dr.yeongjin.jang@gmail.com.
+
+Such communications will be subject to his discretion,
+and any adjustments to the licensing terms will be considered on
+a case-by-case basis.
+

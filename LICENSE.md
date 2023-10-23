@@ -31,6 +31,20 @@ This arrangement seeks to foster a supportive ecosystem for
 burgeoning cybersecurity education programs while ensuring adherence to
 fair usage and the promotion of educational initiatives.
 
+## Exception to the Mandatory Donation Clause
+
+An exemption to the stipulated mandatory donation requirement
+may be granted under the specific authorization of the repository's
+principal contributor, Dr. Yeongjin Jang. Parties interested in seeking
+concessions concerning this clause, such as a reduction in the prescribed
+donation amount, are advised to initiate a formal request by reaching out to
+Dr. Jang directly through electronic correspondence at
+dr.yeongjin.jang@gmail.com.
+
+Such communications will be subject to his discretion,
+and any adjustments to the licensing terms will be considered on
+a case-by-case basis.
+
 
 # Attribution-NonCommercial-NoDerivatives 4.0 International
 
