@@ -10,6 +10,7 @@ RUN set -ex; \
     useradd -m labs; \
     useradd -m admin; \
     usermod -aG sudo admin; \
+    update-locale LANG=en_US.UTF-8 LC_MESSAGES=POSIX; \
     chsh -s $(which zsh) labs; \
     echo "labs:${PASSWORD}" | chpasswd; \
     echo "admin:${PASSWORD}" | chpasswd 
