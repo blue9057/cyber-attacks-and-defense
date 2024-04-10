@@ -1,3 +1,16 @@
+# how do i dock
+
+First, you need to install Podman with your preferred package manager. This should theoretically work with Docker as well, though I did not test it.
+
+```bash
+$ podman build -t cand https://github.com/gnubufferoverflows/cand-docker.git
+$ podman run -t -a stdin -a stdout -a stderr cand
+```
+
+The process will take a while. You may want to prepare a bottle of gin during this time to get yourself properly inebriated and in the hacking mood.
+
+When prompted for the password, enter the highly secure password `password`. The challenges can be found in the home directory of `/home/labs`. Enjoy!
+
 # Cyber Attacks and Defense
 
 This repository serves as a comprehensive archive of educational content,
