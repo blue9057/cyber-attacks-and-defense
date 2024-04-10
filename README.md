@@ -9,6 +9,11 @@ $ podman run -t -a stdin -a stdout -a stderr cand
 
 Disable ASLR on the container, must run on your **host** system. For Linux systems: `sudo echo 0 | sudo tee /proc/sys/kernel/randomize_va_space`
 
+ASLR options:
+* `0`: Disable
+* `1`: Shared libraries, stack, mmap(), VDSO and heap
+* `2`: Full ASLR
+
 Find container ID: `podman ps -a`
 
 Stop container (saving progress): `podman stop containerid`
