@@ -36,7 +36,7 @@ WORKDIR /home/labs
 RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 RUN git clone https://github.com/blue9057/config.git
 RUN mv config/* .
-RUN mv zshrc .zshrc && mv bashrc .bashrc && mv zprofile .zprofile && mv gitconfig .gitconfig && mv irbrc .irbrc && mv vimrc .vimrc
+RUN mv zshrc .zshrc && mv bashrc .bashrc && mv zprofile .zprofile && mv gitconfig .gitconfig && mv irbrc .irbrc && mv vimrc .vimrc && mv vim .vim
 RUN rm -rf ssh
 RUN rm -rf config
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
