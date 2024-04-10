@@ -42,3 +42,6 @@ RUN rm -rf ssh
 RUN rm -rf config
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 RUN pip2 install pwntools
+RUN mkdir .config
+RUN mkdir .config/nvim
+RUN (cd .config/nvim && wget https://gist.githubusercontent.com/gnubufferoverflows/14f77f713f20fe0197b31d81c9511e92/raw/c8d9fab0f7f6c7dd649b7a1b390f0925a2506e43/init.lua)
