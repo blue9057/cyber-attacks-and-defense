@@ -32,6 +32,9 @@ Please note: I did not test all of the challenges, so please report any issues.
 
 Also please note: This is meant to be a container for single user use. It's not meant for a classroom. I don't intend on making a multi-user version.
 
+## For Cheaters
+If you have given up, the solutions can be found in `/root`. To get root, you need to do `su - admin` using the very secure password, then you may run `sudo`.
+
 # Cyber Attacks and Defense
 
 This repository serves as a comprehensive archive of educational content,
