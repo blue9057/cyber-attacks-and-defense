@@ -11,6 +11,27 @@ The process will take a while. You may want to prepare a bottle of gin during th
 
 When prompted for the password, enter the highly secure password `password`. The challenges can be found in the home directory of `/home/labs`. Enjoy!
 
+## ASLR
+
+Disable ASLR on the container, must run on your **host** system. For Linux systems: `sudo echo 0 | sudo tee /proc/sys/kernel/randomize_va_space`
+
+ASLR options:
+* `0`: Disable
+* `1`: Shared libraries, stack, mmap(), VDSO and heap
+* `2`: Full ASLR
+
+## Manage your Container
+
+Find container ID: `podman ps -a`
+
+Stop container (saving progress): `podman stop containerid`
+
+Get TTY back after stopping: `podman start -a containerid`
+
+Please note: I did not test all of the challenges, so please report any issues.
+
+Also please note: This is meant to be a container for single user use. It's not meant for a classroom. I don't intend on making a multi-user version.
+
 # Cyber Attacks and Defense
 
 This repository serves as a comprehensive archive of educational content,
