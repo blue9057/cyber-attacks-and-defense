@@ -6,7 +6,7 @@ COPY ./solutions /root/
 RUN set -ex; \
     \
     apt-get update; \
-    apt-get install -y python2 python3 gdb valgrind zsh git bash systemd ruby wget curl tmux gcc neovim vim make clang sudo gcc-multilib; \
+    apt-get install -y python2 python-pip python3 gdb valgrind zsh git bash systemd ruby wget curl tmux gcc neovim vim make clang sudo gcc-multilib; \
     useradd -m labs; \
     useradd -m admin; \
     usermod -aG sudo admin; \
@@ -40,3 +40,4 @@ RUN mv zshrc .zshrc && mv bashrc .bashrc && mv zprofile .zprofile && mv gitconfi
 RUN rm -rf ssh
 RUN rm -rf config
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUN pip2 install pwntools
