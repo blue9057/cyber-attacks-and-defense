@@ -8,7 +8,9 @@ $ podman run -t -a stdin -a stdout -a stderr cand
 ```
 
 Find container ID: `podman ps -a`
+
 Stop container (saving progress): `podman stop containerid`
+
 Get TTY back after stopping: `podman start -a containerid`
 
 The process will take a while. You may want to prepare a bottle of gin during this time to get yourself properly inebriated and in the hacking mood.
