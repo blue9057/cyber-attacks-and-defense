@@ -7,6 +7,10 @@ $ podman build -t cand https://github.com/gnubufferoverflows/cand-docker.git
 $ podman run -t -a stdin -a stdout -a stderr cand
 ```
 
+Find container ID: `podman ps -a`
+Stop container (saving progress): `podman stop containerid`
+Get TTY back after stopping: `podman start -a containerid`
+
 The process will take a while. You may want to prepare a bottle of gin during this time to get yourself properly inebriated and in the hacking mood.
 
 When prompted for the password, enter the highly secure password `password`. The challenges can be found in the home directory of `/home/labs`. Enjoy!
