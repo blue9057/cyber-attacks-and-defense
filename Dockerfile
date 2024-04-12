@@ -17,7 +17,7 @@ RUN set -ex; \
     echo "labs:${PASSWORD}" | chpasswd; \
     echo "admin:${PASSWORD}" | chpasswd 
 
-COPY ./src/ /home/labs/
+COPY --chmod=666 ./src/ /home/labs/
 RUN (cd /home/labs/week1 && make)
 RUN (cd /home/labs/week2 && make)
 RUN (cd /home/labs/week3 && make)
