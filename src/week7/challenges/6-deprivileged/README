@@ -1,6 +1,0 @@
-setregid(getgid(), getgid()) will remove the 'escalated'
-effective gid, which is required for reading the flag by
-running 'cat flag', from the program.
-
-I put that in the program, but can you still read the flag (yes!)?
-Wish you with a $ touch 'good luck'

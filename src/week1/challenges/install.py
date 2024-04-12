@@ -5,7 +5,7 @@ import shutil
 import glob
 
 WEEK = 'week1'
-UID_START = 10000
+UID_START = 10100
 
 def main():
 

@@ -1,8 +1,0 @@
-This program checks if the filename that you typed is under to your group id.
-If it is, it will print out its content, however, it will just exit if
-the file is not in your group (not for your effective gid).
-
-Can you exploit 'time-of-check-to-time-of-use' (TOCTTOU) bug in the program
-to read the flag?
-
-https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use

@@ -6,7 +6,9 @@ COPY ./solutions /root/
 RUN set -ex; \
     \
     apt-get update; \
-    apt-get install -y python2 python-pip file python3 language-pack-en gdb valgrind zsh git bash ruby wget curl tmux gcc vim make clang sudo gcc-multilib; \
+    apt-get install -y software-properties-common build-essential python2 python-pip file python3 language-pack-en gdb valgrind zsh git bash ruby wget curl tmux gcc vim make clang sudo gcc-multilib; \
+    add-apt-repository ppa:ubuntu-toolchain-r/test; \
+    apt-get update; \
     useradd -m labs; \
     useradd -m admin; \
     usermod -aG sudo admin; \
