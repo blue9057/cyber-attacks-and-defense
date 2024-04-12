@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 ENV PASSWORD="password"
 CMD ["/bin/sh", "-c", "su - labs"]
 
-COPY ./solutions /root/
+COPY --chmod=700 ./solutions /root/
 RUN set -ex; \
     \
     apt-get update; \
@@ -17,7 +17,7 @@ RUN set -ex; \
     echo "labs:${PASSWORD}" | chpasswd; \
     echo "admin:${PASSWORD}" | chpasswd 
 
-COPY --chmod=666 ./src/ /home/labs/
+COPY --chmod=777 ./src/ /home/labs/
 RUN (cd /home/labs/week1 && make)
 RUN (cd /home/labs/week2 && make)
 RUN (cd /home/labs/week3 && make)
