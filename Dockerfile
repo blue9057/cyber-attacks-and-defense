@@ -15,7 +15,7 @@ RUN set -ex; \
     update-locale LANG=en_US.UTF-8 LC_MESSAGES=POSIX; \
     chsh -s $(which bash) labs; \
     echo "labs:${PASSWORD}" | chpasswd; \
-    echo "admin:${PASSWORD}" | chpasswd 
+    echo "admin:${PASSWORD}" | chpasswd
 
 COPY --chmod=777 ./src/ /home/labs/
 RUN (cd /home/labs/week1 && make)
@@ -34,6 +34,7 @@ RUN (cd /home/labs/week5/challenges && python2 install.py)
 RUN (cd /home/labs/week6/challenges && python2 install.py)
 RUN (cd /home/labs/week7/challenges && python2 install.py)
 RUN (wget https://github.com/pwndbg/pwndbg/releases/download/2024.02.14/pwndbg_2024.02.14_amd64.deb && apt install -y ./pwndbg_2024.02.14_amd64.deb && rm pwndbg_2024.02.14_amd64.deb)
+RUN ln -s /usr/bin/python2 /usr/bin/python
 
 USER labs
 WORKDIR /home/labs
@@ -41,3 +42,4 @@ RUN (wget https://robertserver.s3.us-west-2.amazonaws.com/cand_dotfiles.tar.gz &
 RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 RUN pip2 install pwntools
 
+USER root
