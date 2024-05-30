@@ -5,7 +5,7 @@ import shutil
 import glob
 
 WEEK = 'week1'
-UID_START = 10000
+UID_START = 10100
 
 def main():
 
@@ -15,7 +15,7 @@ def main():
 
     print(dirs)
 
-    lab_dir = "/home/labs/%s" % WEEK
+    lab_dir = "/home/labs/%s/challenges" % WEEK
     # create lab directory
     if not os.path.exists(lab_dir):
         os.system("sudo mkdir %s" % lab_dir)
