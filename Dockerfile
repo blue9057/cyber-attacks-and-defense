@@ -41,5 +41,8 @@ WORKDIR /home/labs
 RUN (wget https://robertserver.s3.us-west-2.amazonaws.com/cand_dotfiles.tar.gz && tar -xvf cand_dotfiles.tar.gz && rm cand_dotfiles.tar.gz)
 RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 RUN pip2 install pwntools
+COPY setup-workdir.py /home/labs
+COPY tmux.conf /home/labs/.tmux.conf
+COPY bashrc /home/labs/.bashrc
 
 USER root
