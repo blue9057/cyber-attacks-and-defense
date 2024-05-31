@@ -1,4 +1,4 @@
-CC=gcc-4.7
+CC=gcc
 
 all: bof-level8
 
